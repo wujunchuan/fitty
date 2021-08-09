@@ -234,26 +234,6 @@
 
     <main>
 
-        <div class="splash">
-
-            <div class="counter">
-                <div><h1>Fitty</h1></div>
-            </div>
-
-            <p class="tagline">Snugly resizes text to fit its parent container.</p>
-
-            <p class="calories">~ 1 kcal, ehh, kB gzipped</p>
-
-            <div class="choices">
-
-                <a class="button" href="#examples">Examples</a>
-
-                <a class="button button-cta" href="https://github.com/rikschennink/fitty">Get it on GitHub</a>
-
-            </div>
-
-        </div>
-
         <div class="examples">
 
             <div>
@@ -263,11 +243,11 @@
                 <p>The examples below can edited live and will auto update.</p>
 
                 <div class="container">
-                    <p class="fit" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">The wizard quickly jinxed the gnomes before they vaporized.</p>
+                    <p class="fit" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">穿搭研究事务所 / 2018 - 2021</p>
                 </div>
 
                 <div class="container">
-                    <p class="fit" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">Wizard</p>
+                    <p class="fit" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">初秋上新<br/>经典复刻</p>
                 </div>
 
                 <p>Click button below to load a custom font to the fitties above.</p>
@@ -293,7 +273,9 @@
 
       // fit all demos
       fitty('.fit', {
-        minSize:1
+        minSize:1,
+        maxSize: 120,
+        multiLine: false
       });
 
     </script>

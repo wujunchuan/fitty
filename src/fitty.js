@@ -75,7 +75,6 @@ export default ((w) => {
 
         // remember current font size
         f.previousFontSize = f.currentFontSize;
-
         // let's calculate the new font size
         f.currentFontSize = Math.min(
             Math.max(f.minSize, (f.availableWidth / f.currentWidth) * f.previousFontSize),
